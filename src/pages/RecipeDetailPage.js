@@ -1,5 +1,5 @@
 import React from 'react';
-import { useParams, useHistory } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import RecipeDetail from '../components/RecipeDetail';
 
 const initialRecipes = [
@@ -16,11 +16,11 @@ const initialRecipes = [
 
 const RecipeDetailPage = () => {
   const { id } = useParams();
-  const history = useHistory();
+  const navigate = useNavigate();
   const recipe = initialRecipes.find((recipe) => recipe.id === parseInt(id, 10));
 
   return (
-    <RecipeDetail recipe={recipe} goBack={() => history.push('/')} />
+    <RecipeDetail recipe={recipe} goBack={() => navigate('/')} />
   );
 };
 
