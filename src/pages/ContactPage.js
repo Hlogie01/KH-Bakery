@@ -29,7 +29,7 @@ const ContactPage = () => {
   return (
     <div className="contact-page">
       <h1>Contact Us</h1>
-      <p>If you have any questions, feel free to reach out to us at contact@recipebook.com.</p>
+      <p>If you have any questions, feel free to reach out to us at contact@fantasyflavors.com.</p>
       <form onSubmit={handleSubmit}>
         <div>
           <label>
