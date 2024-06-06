@@ -109,6 +109,20 @@ const recipes = [
       'Serve with crusty bread.'
     ],
     image: 'https://example.com/tomato-soup.jpg'
+  },
+  {
+    id: 9,
+    title: 'Tomato Soup',
+    shortDescription: 'A creamy and comforting tomato soup.',
+    ingredients: ['Tomatoes', 'Onions', 'Garlic', 'Cream', 'Basil'],
+    steps: [
+      'Sauté onions and garlic until soft.',
+      'Add tomatoes and cook until they break down.',
+      'Blend until smooth and add cream.',
+      'Simmer and season with basil.',
+      'Serve with crusty bread.'
+    ],
+    image: 'https://example.com/tomato-soup.jpg'
   }
 ];
 
