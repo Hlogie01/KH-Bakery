@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import RecipesListPage from './pages/RecipesListPage';
 import RecipeDetailPage from './pages/RecipeDetailPage';
 import AboutPage from './pages/AboutPage';
@@ -11,17 +11,18 @@ function App() {
     <Router>
       <div className="App">
         <nav>
-          <ul>
+          <div className="brand">Fantasy Flavors</div>
+          <ul className="nav-links">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </nav>
         <Routes>
-          <Route exact path="/" component={RecipesListPage} />
-          <Route path="/recipe/:id" component={RecipeDetailPage} />
-          <Route path="/about" component={AboutPage} />
-          <Route path="/contact" component={ContactPage} />
+          <Route path="/" element={<RecipesListPage />} />
+          <Route path="/recipe/:id" element={<RecipeDetailPage />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
     </Router>
