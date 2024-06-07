@@ -16,6 +16,23 @@ h1 {
   margin-bottom: 40px;
 }
 
+/* Welcome section styling */
+.welcome-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.welcome-image {
+  max-width: 150px; /* Adjust the size of the image */
+  margin-right: 20px; /* Add some space between the image and the text */
+}
+
+.welcome-text {
+  flex: 1; /* Take up remaining space */
+}
+
+/* Recipe list styling */
 .recipe-list {
   display: flex;
   flex-wrap: wrap;
@@ -40,8 +57,7 @@ h1 {
 
 .recipe-image {
   max-width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: auto;
   border-bottom: 1px solid #ddd;
 }
 
@@ -55,12 +71,6 @@ h1 {
 
 .recipe-content p {
   color: #555;
-}
-
-.recipe-detail-image {
-  max-width: 100%;
-  height: auto;
-  margin-bottom: 20px;
 }
 
 /* Navbar styling */
@@ -99,7 +109,6 @@ h1 {
 
 .navbar .nav-links a:hover {
   background-color: #45a049;
-  transform: translateY(-2px);
 }
 
 /* Contact form styling */
@@ -151,4 +160,3 @@ h1 {
 .contact-form button:hover {
   background-color: #45a049;
 }
-

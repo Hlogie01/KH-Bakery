@@ -12,7 +12,20 @@ import saladImage from '../images/salad.jpg';
 import mojitoImage from '../images/Orange mocktail.jpg';
 import lemonadeImage from '../images/mojito mocktail.jpg';
 import hotChocolateImage from '../images/mango mocktail.jpg';
+import WelcomeImage from '../images/welcome .png';
 import '../App.css';
+
+// Welcome section component
+const WelcomeSection = () => (
+  <div className="welcome-section">
+    <img src={WelcomeImage} alt="Welcome to our recipe book" className="welcome-image" />
+    <div className="welcome-text">
+      <h2>Welcome to Fantasy Flavors Recipe Book</h2>
+      <p>Welcome to Fantasy Flavors, your gateway to culinary creativity! Explore a world of delicious possibilities with our curated collection of recipes. From classic favorites to innovative creations, our recipe book is your go-to resource for culinary inspiration. Let's embark on a flavorful journey together!</p>
+    </div>
+  </div>
+);
+
 
 const recipes = [
   {
@@ -196,6 +209,7 @@ const RecipesListPage = () => {
 
   return (
     <div className="container">
+      <WelcomeSection />
       <h1>Our Recipes</h1>
 
       <h2>Food</h2>
