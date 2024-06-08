@@ -12,20 +12,8 @@ import saladImage from '../images/salad.jpg';
 import mojitoImage from '../images/Orange mocktail.jpg';
 import lemonadeImage from '../images/mojito mocktail.jpg';
 import hotChocolateImage from '../images/mango mocktail.jpg';
-import WelcomeImage from '../images/welcome .png';
+import welcomeImage from '../images/welcome.png';  // Add your welcome image
 import '../App.css';
-
-// Welcome section component
-const WelcomeSection = () => (
-  <div className="welcome-section">
-    <img src={WelcomeImage} alt="Welcome to our recipe book" className="welcome-image" />
-    <div className="welcome-text">
-      <h2>Welcome to Fantasy Flavors Recipe Book</h2>
-      <p>Welcome to Fantasy Flavors, your gateway to culinary creativity! Explore a world of delicious possibilities with our curated collection of recipes. From classic favorites to innovative creations, our recipe book is your go-to resource for culinary inspiration. Let's embark on a flavorful journey together!</p>
-    </div>
-  </div>
-);
-
 
 const recipes = [
   {
@@ -132,13 +120,13 @@ const recipes = [
   {
     id: 8,
     title: 'Tomato Soup',
-    shortDescription: 'A creamy and comforting tomato soup.',
-    ingredients: ['Tomatoes', 'Onions', 'Garlic', 'Cream', 'Basil'],
+    shortDescription: 'A comforting bowl of tomato soup.',
+    ingredients: ['Tomatoes', 'Onions', 'Garlic', 'Basil', 'Cream'],
     steps: [
-      'Sauté onions and garlic until soft.',
-      'Add tomatoes and cook until they break down.',
-      'Blend until smooth and add cream.',
-      'Simmer and season with basil.',
+      'Sauté onions and garlic.',
+      'Add tomatoes and cook until soft.',
+      'Blend until smooth and return to pot.',
+      'Add basil and cream and heat through.',
       'Serve with crusty bread.'
     ],
     image: tomatoSoupImage,
@@ -146,57 +134,63 @@ const recipes = [
   },
   {
     id: 9,
-    title: 'Tomato Soup',
-    shortDescription: 'A creamy and comforting tomato soup.',
-    ingredients: ['Tomatoes', 'Onions', 'Garlic', 'Cream', 'Basil'],
+    title: 'Garden Salad',
+    shortDescription: 'A fresh and healthy garden salad.',
+    ingredients: ['Lettuce', 'Tomatoes', 'Cucumbers', 'Carrots', 'Salad dressing'],
     steps: [
-      'Sauté onions and garlic until soft.',
-      'Add tomatoes and cook until they break down.',
-      'Blend until smooth and add cream.',
-      'Simmer and season with basil.',
-      'Serve with crusty bread.'
+      'Chop all vegetables and place in a bowl.',
+      'Toss with your favorite salad dressing.',
+      'Serve immediately.'
     ],
     image: saladImage,
     type: 'food'
   },
   {
     id: 10,
-    title: 'Mojito',
-    shortDescription: 'A refreshing cocktail with mint, lime, and rum.',
-    ingredients: ['Mint leaves', 'Lime', 'Rum', 'Sugar', 'Soda water'],
+    title: 'Orange Juice MocktailL',
+    shortDescription: 'A refreshing fancy, fizzy and never dull, my orange mocktail.',
+    ingredients: ['Mint leaves', 'Lemon Juice', 'Orange Juice', 'Ginger Ale', 'Apple CCider Vineger', 'Ice', 'Simple syrup(Optional)'],
     steps: [
-      'Muddle mint leaves and lime in a glass.',
-      'Add sugar and rum and stir well.',
-      'Fill the glass with ice and top with soda water.',
-      'Garnish with a mint sprig and lime wedge.'
+      'Add orange juice, lemon juice, apple cider vinegar and simple syrup (if using) into the cocktail shaker.',
+      'Clap the mint in your hands to release the scent, then place in a cocktail',
+      'Add some ice cubes to the shaker and shake until combined.',
+      'Slowly pour into an ice-filled glass and top with ginger ale.',
+      'Garnish with orange slices and mint or whatever you have available.',
+      'Serve and Enjoy!'
     ],
     image: mojitoImage,
     type: 'drink'
   },
   {
     id: 11,
-    title: 'Lemonade',
-    shortDescription: 'A classic, refreshing lemonade.',
-    ingredients: ['Lemons', 'Water', 'Sugar'],
+    title: 'Mojto Mocktail',
+    shortDescription: 'A classic homemade mojito mocktail.',
+    ingredients: ['Lime', 'Simple syrup', 'fresh mint leaves', 'ice cubes', 'club soda', 'fresh mint sprig'],
     steps: [
-      'Juice the lemons and combine with water and sugar.',
-      'Stir until the sugar dissolves.',
-      'Chill in the refrigerator before serving.',
-      'Serve over ice with lemon slices.'
+      'Add limes to glass. Add 5 of the lime wedges and the syrup to a tall glass (highball).',
+      'Muddle limes. Muddle the limes to release the juices and oil.',
+      'Add mint. Add the mint leaves.',
+      'Top glass with ice and soda. Fill the glass with ice and top it with the soda.',
+      'Stir. Give the drink a stir to combine the ingredients.',
+      'Slap the mint. Slap the mint sprig in your palm a couple of times to release some oils.',
+      'Garnish. Garnish the drink with the mint sprig and the last lime wedge.',
+      'Serve. Serve immediately!'
     ],
     image: lemonadeImage,
     type: 'drink'
   },
   {
     id: 12,
-    title: 'Hot Chocolate',
-    shortDescription: 'A warm and comforting hot chocolate.',
-    ingredients: ['Milk', 'Cocoa powder', 'Sugar', 'Vanilla extract', 'Whipped cream'],
+    title: 'Mango Mojito Mocktail',
+    shortDescription: 'The flavors of mango, mint, and lime and indeed shouting SUMMER! ',
+    ingredients: ['half a cup of mango puree', '2 tablespoon water', '1 lime quartered', '6 mint leaves', '1 cup soda water or any sparkling drink (kombucha is also great)', 'Extra mint and lime'],
     steps: [
-      'Heat milk in a saucepan until warm.',
-      'Whisk in cocoa powder and sugar until dissolved.',
-      'Add vanilla extract and stir well.',
-      'Pour into mugs and top with whipped cream.'
+      'To release the juices, muddle lime slices in your glass or pitcher.',
+      'Holding mint in your palms, clap them together until the aroma emerges. Add to the lime. Apply light pressure with the muddler.',
+      'Pour your mango puree into the lime and mint mixture.',
+      'Gently whisk the mango puree after adding it to the lime and mint mixture.',
+      'Ice should be put in the glass. Add sparkling water (or a substitute) on top and gently stir.',
+      'Lime wheel and mint are used as a garnish.'
     ],
     image: hotChocolateImage,
     type: 'drink'
@@ -209,7 +203,14 @@ const RecipesListPage = () => {
 
   return (
     <div className="container">
-      <WelcomeSection />
+      <div className="welcome-section">
+        <img src={welcomeImage} alt="Welcome" />
+        <div className="welcome-text">
+          <h2>Fantasy Flavors Recipe Book</h2>
+          <p>Welcome to Fantasy Flavors, your gateway to culinary creativity! Explore a world of delicious possibilities with our curated collection of recipes. From classic favorites to innovative creations, our recipe book is your go-to resource for culinary inspiration brought to you by Lehlogonolo and Kimberly. Let's embark on a flavorful journey together!</p>
+        </div>
+      </div>
+
       <h1>Our Recipes</h1>
 
       <h2>Food</h2>
