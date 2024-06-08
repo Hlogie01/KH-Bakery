@@ -33,29 +33,35 @@ const recipes = [
   },
   {
     id: 2,
-    title: 'Chicken Curry',
-    shortDescription: 'A flavorful and spicy chicken curry.',
-    ingredients: ['Chicken', 'Onions', 'Tomatoes', 'Garlic', 'Ginger', 'Spices'],
+    title: 'Beef smash burger with fries',
+    shortDescription: 'The ultimate juicy, crispy & grilled smashed burgers',
+    ingredients: ['Frosen Fries', 'Ground Beef chick(aim for ground beef with 15% fat)', 'Hamburger buns', 'Yellow onion', 'Clarified butter', 'Spices', 'Tomato','lettice', 'Burger sauce'],
     steps: [
-      'Sauté onions, garlic, and ginger.',
-      'Add spices and cook until fragrant.',
-      'Add chicken and brown.',
-      'Add tomatoes and simmer until chicken is cooked.',
-      'Serve with rice.'
+      'Preheat the grill. Preheat your flat-top grill, griddle, or 12" cast iron skillet to medium-high heat.',
+      'Form the meat patties. Divide the ground beef into 8 even sections. Loosely form the meat into balls and set aside.',
+      'Make the homemade burger sauce. Combine all ingredients for the burger sauce in a small bowl and stir to combine.',
+      'Grill the smashburgers. Season the flattened meat patties with Beef Seasoning and cook for 3-4 minutes. Flip the burgers, add a slice of American cheese to each patty, and continue grilling for 3-4 minutes.',
+      'Toast the buns. While the burgers are cooking, melt more clarified butter on the cast iron skillet next to the burgers and place the buns cut side down on the grill. Brush more butter on the tops of the buns and toast for 1-2 minutes until the buns begin to turn golden brown. Do not flip.',
+      'Assemble the smashburgers. Remove the buns and meat from the grill. Place a dollop of burger sauce on the bottom bun, top with a cheesy patty and grilled onions, and finish with a bun. You can also make these with a double patty and 4 buns, if desired.',
+      'Prepare where you are going to deep fry your fries.',
+      'fry your fries on a high heat so that can be crispy. Fry for 5min.',
+      'Serve with your smash burger and enjoy!'
     ],
     image: chickenCurryImage,
     type: 'food'
   },
   {
     id: 3,
-    title: 'Beef Tacos',
-    shortDescription: 'Delicious beef tacos with fresh toppings.',
-    ingredients: ['Beef', 'Taco shells', 'Lettuce', 'Tomatoes', 'Cheese', 'Sour cream'],
+    title: 'Cajun Seafood Boil',
+    shortDescription: 'Delicious and heart warming seafood bowl with garlic butter sauce.',
+    ingredients: ['Water', 'Beer(optional)', 'Cajun & Old Bay seasoning', 'onion & lemon', 'snow crab leg clusters', 'shrimps', 'baby potatoes & corns'],
     steps: [
-      'Cook beef with spices until browned.',
-      'Warm taco shells.',
-      'Assemble tacos with beef and toppings.',
-      'Serve with salsa and sour cream.'
+      'Prepare the boil. In a large stockpot over medium-high heat, combine the water and beer (if using). Bring the liquid to a boil. Season the boil with the Cajun seasoning, Old Bay seasoning, and a few dashes of hot sauce- to taste. Add the sliced onion and lemon wedges into the pot. Stir to combine and let the mixture boil for 15 minutes.',
+      'Add the andouille & potatoes into the pot, stirring well. Let the andouille and potatoes cook for 15-20 minutes, until the potatoes are fork-tender.',
+      'Add the seafood & corn. Nestle the snow crab clusters into the pot along with the shrimp and corn on the cob. Continue boiling for another 5-7 minutes, cooking until the shrimp is pink. Meanwhile, make the sauce.',
+      'Make the garlic butter sauce. On a separate burner, in a small saucepan over medium heat, combine the butter, garlic, lemon juice, Old Bay seasoning, parsley, Cajun seasoning, smoked paprika, and hot sauce- to taste. Stir and simmer the sauce until the butter melts and the sauce is well combined, about 5-7 minutes.',
+      'Assemble cajun seafood boil with sauce. Line an extra large baking sheet with newspaper or foil/parchment paper. Use a spider strainer to remove the seafood boil contents from the pot and place onto the prepared baking sheet along with the hard boiled eggs (if using). Pour the garlic butter sauce over the seafood boil ingredients and toss to coat.',
+      'Serve this Cajun seafood boil immediately as-is on the baking sheet or divide the boil onto individual plates to serve if you prefer. Enjoy!'
     ],
     image: beefTacosImage,
     type: 'food'
@@ -119,15 +125,19 @@ const recipes = [
   },
   {
     id: 8,
-    title: 'Tomato Soup',
-    shortDescription: 'A comforting bowl of tomato soup.',
-    ingredients: ['Tomatoes', 'Onions', 'Garlic', 'Basil', 'Cream'],
+    title: 'Cheese Cake',
+    shortDescription: 'The best CheeseCake Recipe!',
+    ingredients: ['Graham crackers( crushed into crumbs)', 'Butter', 'Salt & Suger', 'Cream Cheese', 'Vanilla extract', 'Eggs'],
     steps: [
-      'Sauté onions and garlic.',
-      'Add tomatoes and cook until soft.',
-      'Blend until smooth and return to pot.',
+      'Prepare the pan. Double wrap the bottom of your pan with foil, ensuring the layers are overlapped to prevent water from getting into the pan. Preheat the oven to 350F.',
+      'Make the crust. Combine the graham cracker crumbs, butter, sugar, and salt. Press into the bottom and up the sides of the pan.',
+      'Bake the crust. Bake for 8-10 minutes, until lightly golden. Set aside.',
       'Add basil and cream and heat through.',
-      'Serve with crusty bread.'
+      'Make the cheesecake filling. Mix the cream cheese and sugar on medium until smooth. Turn the speed to low and add the sour cream and vanilla. Scrape the sides of the bowl as necessary. Add the eggs one at a time, until just mixed. Pour the filling into the crust and spread evenly',
+      'Add the water bath. Place the springform pan in another large pan. Fill 3/4″ inch deep with very hot water.',
+      'Bake. Bake the cheesecake for 60-70 minutes, until the center is almost set. Run a knife around the rim to gently loosen the cake.',
+      'Cool. Cool the homemade cheesecake at room temperature for an hour, then cover and refrigerate for 6 hours or overnight.',
+      'Serve. Remove the sides of the springform pan and transfer the cheesecake to a serving.'
     ],
     image: tomatoSoupImage,
     type: 'food'
