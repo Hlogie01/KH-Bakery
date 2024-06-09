@@ -183,3 +183,68 @@ h1 {
 .contact-form button:hover {
   background-color: #45a049;
 }
+.container.recipe-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-detail h1 {
+  text-align: center;
+  font-size: 2.5em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.recipe-detail-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 10px;
+}
+
+.recipe-detail h2 {
+  font-size: 2em;
+  color: #4CAF50;
+  margin-top: 30px;
+}
+
+.recipe-detail ul,
+.recipe-detail ol {
+  padding-left: 20px;
+  font-size: 1.1em;
+  color: #555;
+}
+
+.recipe-detail ul li,
+.recipe-detail ol li {
+  margin-bottom: 10px;
+}
+
+.recipe-detail a {
+  display: block;
+  text-align: center;
+  margin-top: 30px;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  color: #fff;
+  background-color: #4CAF50;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.recipe-detail a:hover {
+  background-color: #45a049;
+}
+
+.thank-you-image {
+  display: block;
+  max-width: 50%;
+  height: auto;
+  margin: 30px auto;
+  border-radius: 10px;
+}

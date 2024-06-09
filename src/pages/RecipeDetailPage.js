@@ -12,6 +12,7 @@ import saladImage from '../images/salad.jpg';
 import orangeImage from '../images/Orange mocktail.jpg';
 import mojitoImage from '../images/mojito mocktail.jpg';
 import mangoImage from '../images/mango mocktail.jpg';
+import ThankyouImage from '../images/KH.jpeg';
 import '../App.css'; // Ensure this imports the necessary CSS
 
 const recipes = [
@@ -253,6 +254,7 @@ const RecipeDetailPage = () => {
           <li key={index}>{step}</li>
         ))}
       </ol>
+      <img src={ThankyouImage} alt="Thank You" className='thank-you-img' />
       <Link to="/">Back to Recipes List</Link>
     </div>
   );
