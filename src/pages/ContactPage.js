@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import '../App.css'; // Make sure the path is correct
 
 const ContactPage = () => {
@@ -17,6 +18,7 @@ const ContactPage = () => {
 
         <button type="submit">Send</button>
       </form>
+      <Footer />
     </div>
   );
 };

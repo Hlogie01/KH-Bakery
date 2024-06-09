@@ -256,6 +256,7 @@ const RecipeDetailPage = () => {
       </ol>
       <img src={thankyouImage} alt="Thank You" className="thank-you-image" />
       <Link to="/">Back to Recipes List</Link>
+      
     </div>
   );
 };

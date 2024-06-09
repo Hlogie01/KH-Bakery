@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import { Link } from 'react-router-dom';
 import baritoImage from '../images/barito.jpg';
 import burgerImage from '../images/burger and fries.jpg';
@@ -271,6 +272,7 @@ const RecipesListPage = () => {
           </div>
         ))}
       </div>
+      <Footer />
     </div>
   );
 };

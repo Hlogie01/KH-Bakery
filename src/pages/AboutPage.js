@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../components/Footer';
 import '../App.css'; // Ensure this imports the necessary CSS
 
 const AboutPage = () => {
@@ -59,6 +60,7 @@ const AboutPage = () => {
           <strong>Thank you for being a part of our journey. Happy cooking!</strong>
         </p>
       </section>
+      <Footer />
     </div>
   );
 };
