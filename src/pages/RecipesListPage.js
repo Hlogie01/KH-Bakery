@@ -1,34 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import spaghettiImage from '../images/barito.jpg';
-import chickenCurryImage from '../images/burger and fries.jpg';
-import beefTacosImage from '../images/seafood.jpg';
-import vegetableStirfryImage from '../images/pizza.jpg';
-import pancakesImage from '../images/pasta1.jpg';
-import caesarSaladImage from '../images/pasta.jpg';
-import chocolateCakeImage from '../images/pancakes.jpg';
-import tomatoSoupImage from '../images/cheesecake .jpg';
+import baritoImage from '../images/barito.jpg';
+import burgerImage from '../images/burger and fries.jpg';
+import seafoodImage from '../images/seafood.jpg';
+import pizzaImage from '../images/pizza.jpg';
+import pasta1Image from '../images/pasta1.jpg';
+import pastaImage from '../images/pasta.jpg';
+import pancakesImage from '../images/pancakes.jpg';
+import cheesecakeImage from '../images/cheesecake .jpg';
 import saladImage from '../images/salad.jpg';
-import mojitoImage from '../images/Orange mocktail.jpg';
-import lemonadeImage from '../images/mojito mocktail.jpg';
-import hotChocolateImage from '../images/mango mocktail.jpg';
+import orangeImage from '../images/Orange mocktail.jpg';
+import mojitoImage from '../images/mojito mocktail.jpg';
+import mangoImage from '../images/mango mocktail.jpg';
 import welcomeImage from '../images/welcome.png';  // Add your welcome image
 import '../App.css';
 
 const recipes = [
   {
     id: 1,
-    title: 'Spaghetti Carbonara',
-    shortDescription: 'A classic Italian pasta dish with eggs, cheese, pancetta, and pepper.',
-    ingredients: ['Spaghetti', 'Eggs', 'Cheese', 'Pancetta', 'Pepper'],
+    title: 'Vegetable and Protein Wrap',
+    shortDescription: 'A nutritious wrap that combines fresh, crunchy vegetables with a choice of protein.',
+    ingredients: ['Soft tortillas', 'Diced vegetables (carrots, green peas, and others as preferred)', 'Protein of choice (chicken or tofu)', 'Seasonings (salt, pepper, and any other preferred spices)', 'Optional sauces or spreads (hummus, tzatziki, etc.)'],
     steps: [
-      'Cook spaghetti according to package instructions.',
-      'In a bowl, mix eggs and cheese.',
-      'Fry pancetta until crispy.',
-      'Mix spaghetti with pancetta and egg mixture.',
-      'Serve with extra cheese and pepper on top.'
+      'Prepare the protein: If using chicken, cook it thoroughly until no longer pink. If using tofu, press to remove excess moisture and then sauté until golden.',
+      'Cook the vegetables: Sauté the diced vegetables in a pan with some oil until they are tender.',
+      'Season: Add your preferred spices to the cooked protein and vegetables.',
+      'Warm the tortillas: Heat the tortillas slightly to make them pliable.',
+      'Assemble the wraps: Spread your chosen sauce or spread on the tortillas, add the vegetable mixture and protein, and roll them up tightly.',
+      'Serve: Cut each wrap in half diagonally and enjoy!'
     ],
-    image: spaghettiImage,
+    image: baritoImage,
     type: 'food'
   },
   {
@@ -47,7 +48,7 @@ const recipes = [
       'fry your fries on a high heat so that can be crispy. Fry for 5min.',
       'Serve with your smash burger and enjoy!'
     ],
-    image: chickenCurryImage,
+    image: burgerImage,
     type: 'food'
   },
   {
@@ -63,64 +64,82 @@ const recipes = [
       'Assemble cajun seafood boil with sauce. Line an extra large baking sheet with newspaper or foil/parchment paper. Use a spider strainer to remove the seafood boil contents from the pot and place onto the prepared baking sheet along with the hard boiled eggs (if using). Pour the garlic butter sauce over the seafood boil ingredients and toss to coat.',
       'Serve this Cajun seafood boil immediately as-is on the baking sheet or divide the boil onto individual plates to serve if you prefer. Enjoy!'
     ],
-    image: beefTacosImage,
+    image: seafoodImage,
     type: 'food'
   },
   {
     id: 4,
-    title: 'Vegetable Stir-fry',
-    shortDescription: 'A healthy and quick vegetable stir-fry.',
-    ingredients: ['Vegetables', 'Soy sauce', 'Garlic', 'Ginger', 'Oil'],
+    title: 'Crispy Deep Crust Pepperoni Pizza',
+    shortDescription: 'The old-fashioned deep-dish pepperoni pizza',
+    ingredients: ['Pizza dough', 'Garlic cloves', 'pizza sauce', 'pepperoni', 'Olive oil', 'Mozzarella cheese', 'Italian seasoning'],
     steps: [
-      'Heat oil in a pan.',
-      'Add garlic and ginger and cook until fragrant.',
-      'Add vegetables and stir-fry until tender.',
-      'Add soy sauce and mix well.',
-      'Serve with rice or noodles.'
+      'Preheat oven to 400 degrees. Brush cast-iron skillet with olive oil and dust with flour.',
+      'If your pizza dough is not pre-rolled, use a floured surface and roll the dough out to fit your cast iron skillet.',
+      'Press the pizza dough into the bottom and up the sides of the skillet, approximately halfway up.',
+      'Brush the dough with olive oil and crushed garlic. Do not add any pizza toppings yet. Bake for 18-25 minutes or until the crust turns golden.',
+      'While the crust bakes, chop the pepperoni into two small piles and set aside.',
+      'Once the crust is golden brown, take it out of the oven.',
+      'Spread the pizza sauce evenly over the crust.',
+      'Add one half of the chopped pepperoni, then half of the shredded mozzarella cheese.',
+      'Add the remaining chopped pepperoni (optional: save some to sprinkle on top before the final bake).',
+      'Add the rest of the shredded mozzarella, then evenly place the fresh mozzarella slices around and add the fresh basil.',
+      'Sprinkle Italian seasoning over the top of the cheese, adding the leftover chopped pepperoni if saved.',
+      'Bake for an additional 15-20 minutes or until the crust is golden brown,',
+      'Remove from oven and let cool for a few minutes before slicing and serving. Enjoy!'
     ],
-    image: vegetableStirfryImage,
+    image: pizzaImage,
     type: 'food'
   },
   {
     id: 5,
-    title: 'Pancakes',
-    shortDescription: 'Fluffy pancakes perfect for breakfast.',
-    ingredients: ['Flour', 'Eggs', 'Milk', 'Baking powder', 'Sugar'],
+    title: 'Pasta with Red Beans and Tomato',
+    shortDescription: 'Pasta served with a hearty mix of red beans and fresh tomatoes',
+    ingredients: ['Pasta of your choice', 'Cooked red beans (canned or pre-cooked)', 'Fresh tomatoes, diced', 'Garlic, minced', 'Olive oil', 'Salt and pepper to taste', 'Fresh herbs (parsley or basil), for garnish'],
     steps: [
-      'Mix flour, baking powder, and sugar.',
-      'Add eggs and milk and mix until smooth.',
-      'Cook pancakes on a griddle until golden brown.',
-      'Serve with syrup and butter.'
+      'Cook the pasta according to the package instructions until al dente.',
+      'In a pan, heat olive oil over medium heat and sauté garlic until fragrant.',
+      'Add the diced tomatoes and cooked red beans to the pan. Cook until the tomatoes are soft and the beans are heated through.',
+      'Season with salt and pepper to your liking.',
+      'Drain the pasta and add it to the pan with the tomato and bean mixture. Toss to combine.',
+      'Serve hot, garnished with fresh herbs. Enjoy!'
     ],
-    image: pancakesImage,
+    image: pasta1Image,
     type: 'food'
   },
   {
     id: 6,
-    title: 'Caesar Salad',
-    shortDescription: 'A classic Caesar salad with homemade dressing.',
-    ingredients: ['Romaine lettuce', 'Croutons', 'Parmesan cheese', 'Caesar dressing'],
+    title: 'Creamy Chicken Pasta with Sun-Dried Tomatoes and Spinach',
+    shortDescription: 'A comforting and flavorful chicken pasta dish',
+    ingredients: ['Penne pasta', 'Chicken breast, cut into strips', 'Sun-dried tomatoes, chopped', 'Fresh spinach leaves', 'Heavy cream (or a lighter alternative like half-and-half)', 'Parmesan cheese, grated', 'Olive oil', 'Salt and pepper to taste', 'Herbs (such as basil or oregano), for garnish'],
     steps: [
-      'Chop lettuce and place in a bowl.',
-      'Add croutons and Parmesan cheese.',
-      'Toss with Caesar dressing.',
-      'Serve immediately.'
+      'Cook the penne pasta according to the package instructions until al dente; drain and set aside.',
+      'In a large skillet, heat olive oil over medium heat and cook the chicken strips until golden brown and cooked through.',
+      'Add the sun-dried tomatoes to the skillet and sauté for a couple of minutes.',
+      'Stir in the spinach leaves and cook until they begin to wilt.',
+      'Lower the heat and pour in the heavy cream, stirring well.',
+      'Add the cooked pasta to the skillet and toss to combine with the creamy sauce',
+      'Sprinkle with grated Parmesan cheese and season with salt and pepper.',
+      'Serve hot, garnished with fresh herbs. Enjoy!',
+      'Enjoy your delicious homemade creamy chicken pasta!'
     ],
-    image: caesarSaladImage,
+    image: pastaImage,
     type: 'food'
   },
   {
     id: 7,
-    title: 'Chocolate Cake',
-    shortDescription: 'Rich and moist chocolate cake.',
-    ingredients: ['Flour', 'Sugar', 'Cocoa powder', 'Baking powder', 'Eggs', 'Milk', 'Butter'],
+    title: 'Classic Waffles',
+    shortDescription: 'Perfect waffles for any day of the week!',
+    ingredients: ['2 cups all-purpose flour', '1 teaspoon salt', '4 teapoons baking powder', '2 tablespoons white suger', '2 Eggs', '1.5 cups warm Milk', 'Butter', '1 teaspoon vanilla extract'],
     steps: [
-      'Mix dry ingredients together.',
-      'Add eggs, milk, and melted butter and mix until smooth.',
-      'Pour batter into a cake pan and bake.',
-      'Let cool and frost with chocolate icing.'
+      'Gather all ingridients',
+      'In a large bowl, mix together flour,salt,suger and baking powder; ster aside. Preheat waffle iron to desired temperature.',
+      'In a separate bowl, beat the eggs. Stir in the milk, butter and vanilla.',
+      'Pour the milk mixture into the flour mixture; beat until blended.',
+      'Pour about 1/4 cup of batter onto the center of the waffle iron.',
+      'Cook for 3-5 minutes or until golden brown.',
+      'Serve with your favorite toppings',
     ],
-    image: chocolateCakeImage,
+    image: pancakesImage,
     type: 'food'
   },
   {
@@ -139,25 +158,29 @@ const recipes = [
       'Cool. Cool the homemade cheesecake at room temperature for an hour, then cover and refrigerate for 6 hours or overnight.',
       'Serve. Remove the sides of the springform pan and transfer the cheesecake to a serving.'
     ],
-    image: tomatoSoupImage,
+    image: cheesecakeImage,
     type: 'food'
   },
   {
     id: 9,
-    title: 'Garden Salad',
-    shortDescription: 'A fresh and healthy garden salad.',
-    ingredients: ['Lettuce', 'Tomatoes', 'Cucumbers', 'Carrots', 'Salad dressing'],
+    title: 'Green Delight salad',
+    shortDescription: 'A quick and nutritious Avocado and spinach tomato salad.',
+    ingredients: ['Baby spinach', 'Tomatoes', 'Avocado', 'Goat cheesd', 'Walnuts', 'Basil leaves', 'Olive oil', 'Sea salt'],
     steps: [
-      'Chop all vegetables and place in a bowl.',
-      'Toss with your favorite salad dressing.',
-      'Serve immediately.'
+      'Start by washing the baby spinach leaves thoroughly. Pat them dry with clean kitchen towel or paper towel',
+      'Next, slice the tomstoes into bitr-sized pieces.',
+      'Cut the avocado into small pieces.',
+      'Crumble the goat cheese into small pieces.',
+      'Assemble all the ingredients in a large bowl.',
+      'Drizzle with olive oil and sprinkle with sea salt. Toss gently to combine',
+      'Garnish with fresh basil leaves and serve immediately. Enjoy!',
     ],
     image: saladImage,
     type: 'food'
   },
   {
     id: 10,
-    title: 'Orange Juice MocktailL',
+    title: 'Orange Juice Mocktail',
     shortDescription: 'A refreshing fancy, fizzy and never dull, my orange mocktail.',
     ingredients: ['Mint leaves', 'Lemon Juice', 'Orange Juice', 'Ginger Ale', 'Apple CCider Vineger', 'Ice', 'Simple syrup(Optional)'],
     steps: [
@@ -168,7 +191,7 @@ const recipes = [
       'Garnish with orange slices and mint or whatever you have available.',
       'Serve and Enjoy!'
     ],
-    image: mojitoImage,
+    image: orangeImage,
     type: 'drink'
   },
   {
@@ -186,7 +209,7 @@ const recipes = [
       'Garnish. Garnish the drink with the mint sprig and the last lime wedge.',
       'Serve. Serve immediately!'
     ],
-    image: lemonadeImage,
+    image: mojitoImage,
     type: 'drink'
   },
   {
@@ -202,7 +225,7 @@ const recipes = [
       'Ice should be put in the glass. Add sparkling water (or a substitute) on top and gently stir.',
       'Lime wheel and mint are used as a garnish.'
     ],
-    image: hotChocolateImage,
+    image: mangoImage,
     type: 'drink'
   }
 ];
