@@ -12,6 +12,7 @@ import saladImage from '../images/salad.jpg';
 import orangeImage from '../images/Orange mocktail.jpg';
 import mojitoImage from '../images/mojito mocktail.jpg';
 import mangoImage from '../images/mango mocktail.jpg';
+import thankyouImage from '../images/thanku.png';
 import '../App.css'; // Ensure this imports the necessary CSS
 
 const recipes = [
@@ -35,7 +36,7 @@ const recipes = [
     id: 2,
     title: 'Beef smash burger with fries',
     shortDescription: 'The ultimate juicy, crispy & grilled smashed burgers',
-    ingredients: ['Frosen Fries', 'Ground Beef chick(aim for ground beef with 15% fat)', 'Hamburger buns', 'Yellow onion', 'Clarified butter', 'Spices', 'Tomato','lettice', 'Burger sauce'],
+    ingredients: ['Frozen Fries', 'Ground Beef chick(aim for ground beef with 15% fat)', 'Hamburger buns', 'Yellow onion', 'Clarified butter', 'Spices', 'Tomato','lettice', 'Burger sauce'],
     steps: [
       'Preheat the grill. Preheat your flat-top grill, griddle, or 12" cast iron skillet to medium-high heat.',
       'Form the meat patties. Divide the ground beef into 8 even sections. Loosely form the meat into balls and set aside.',
@@ -253,6 +254,7 @@ const RecipeDetailPage = () => {
           <li key={index}>{step}</li>
         ))}
       </ol>
+      <img src={thankyouImage} alt="Thank You" className="thank-you-image" />
       <Link to="/">Back to Recipes List</Link>
     </div>
   );
